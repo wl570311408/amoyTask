@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
+{
+    UITextField *userName;
+    UITextField *phoneNumber;
+    UITextField *RePhoneNumber;
+    
+    BOOL isRegistered;
+}
+
 
 @end
